@@ -6,20 +6,21 @@
         <meta lang="Français">
     </head>
     <body>
-        <form>
+        <h1 style="text-align: center;">Formulaire de creation de votre CV</h1>
+        <form action="action-page.php" method="get">
             <div>
                 <label for="fname">Prenom: </label>
-                <input type="text" id="fname" name="fname" placeholder="Steve">
+                <input type="text" id="fname" name="fname" placeholder="Steve" maxlength="25" required>
             </div>
             <br>
             <div>
                 <label for="lname">Nom: </label>
-                <input type="text" id="lname" name="lname" placeholder="Jobs">
+                <input type="text" id="lname" name="lname" placeholder="Jobs" maxlength="25" required>
             </div>
             <br>
             <div>
                 <label for="age">Age: </label>
-                <input type="number" id="age" name="age" placeholder="20">
+                <input type="number" min="0" max="20" id="age" name="age" placeholder="20" required>
             </div>
             <br>
             <div>
@@ -28,8 +29,21 @@
             </div>
             <br>
             <div>
+                <p>Situation familial</p><br>
+                <label>
+                    <input type="radio" name="SF" value="Célibataire"> Célibataire 
+                </label>
+                <label>
+                    <input type="radio" name="SF" value="Marrié"> Marrié 
+                </label>
+                <label>
+                    <input type="radio" name="SF" value="Divorcé"> Divorcé 
+                </label>
+            </div>
+            <br>
+            <div>
                 <label for="tcv">Titre du cv: </label>
-                <input type="text" id="tcv" name="tcv" placeholder="CV professionnel de Steve Jobs">
+                <input type="text" id="tcv" name="tcv" placeholder="CV professionnel de Steve Jobs" required>
             </div>
             <br>
             <div>
@@ -37,9 +51,14 @@
                 <textarea id="des" name="des" rows="4" cols="50" placeholder="something you want to add"></textarea>
             </div>
             <br>
+            <div>
+                <label for="image">Inserer votre photo</label>
+                <input type="file" name="image" id="image" accept="image/*">
+            </div>
+            <div>
             <p> Formation:</p>
             <label for="fname">Type de baccalaureat:</label>
-            <input type="text" id="fname" name="fname" placeholder="bac type"><br><br>
+            <input type="text" id="fname" name="fname" placeholder="bac type" required><br><br>
             <label for="diplomat">Donner votre diplome</label>
             <select id="Diplomes" name="diplomat">
                 <option value="DEUG">DEUG</option>
@@ -51,8 +70,12 @@
                 <option value="PHD">DOCTORAT</option>
        
             </select><br><br>
+            </div>
+            <div>
             <label for="goal">Competences techniques:</label><br><br>
             <textarea id="goal" name="goal" rows="5" cols="80"></textarea><br>
+            </div>
+            <div>
             <p> Competences linguistiques:</p>
          
                 <label for="ENG">
@@ -75,8 +98,13 @@
                 <textarea id="lang" name="lang" rows="5" cols="80"></textarea><br>
                 <br>
             <br>
+            <div>
+                <input type="reset" style="border-radius: 5px;">
+            </div>
+            <br>
+            </div>
             <a href="index.html">
-                <button style="background-color: cyan;color: blue; border-radius: 5px;">Submit</button>
+                <input type="submit" style="background-color: cyan;color: blue; border-radius: 5px;">
             </a>
         </form>
     </body>
