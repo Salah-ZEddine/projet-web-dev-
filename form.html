@@ -20,7 +20,7 @@
             <br>
             <div>
                 <label for="age">Age: </label>
-                <input type="number" min="0" max="20" id="age" name="age" placeholder="20" required>
+                <input type="number" min="0" max="20" id="age" name="age" value="20" required>
             </div>
             <br>
             <div>
@@ -29,16 +29,10 @@
             </div>
             <br>
             <div>
-                <p>Situation familial</p><br>
-                <label>
+                <label for="SF"> Situation familiale </label><br><br>
                     <input type="radio" name="SF" value="Célibataire"> Célibataire 
-                </label>
-                <label>
                     <input type="radio" name="SF" value="Marrié"> Marrié 
-                </label>
-                <label>
-                    <input type="radio" name="SF" value="Divorcé"> Divorcé 
-                </label>
+                    <input type="radio" name="SF" value="Divorcé"> Divorcé <br>
             </div>
             <br>
             <div>
@@ -58,22 +52,22 @@
             <div>
             <p> Formation:</p>
             <label for="fname">Type de baccalaureat:</label>
-            <input type="text" id="fname" name="fname" placeholder="bac type" required><br><br>
+            <input type="text" id="fname" name="fname" placeholder="sciences mathématiques A" required><br><br>
             <label for="diplomat">Donner votre diplome</label>
             <select id="Diplomes" name="diplomat">
                 <option value="DEUG">DEUG</option>
                 <option value="DEUST">DEUST</option>
                 <option value="LICENCE">LICENCE</option>
                 <option value="MASTER">MASTER</option>
-                <option value="IE">ING D'ETAT</option>
+                <option value="IE">INGENIEUR D'ETAT</option>
                 <option value="MS">MASTER SPECIALISE</option>
-                <option value="PHD">DOCTORAT</option>
+                <option value="PhD">DOCTORAT</option>
        
             </select><br><br>
             </div>
             <div>
             <label for="goal">Competences techniques:</label><br><br>
-            <textarea id="goal" name="goal" rows="5" cols="80"></textarea><br>
+            <textarea id="goal" name="goal" rows="5" cols="80" placeholder="(facultatif)"></textarea><br>
             </div>
             <div>
             <p> Competences linguistiques:</p>
