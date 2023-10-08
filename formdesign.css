@@ -1,17 +1,23 @@
 body{
-    text-align: center;
-    background-image: url("images/background\ landscape\ .jpeg");
-    
+    text-align: center;    
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+label{
+    display: inline-block;
+    float: left;
+    clear: left;
+    width: 250px;
+    text-align: right;
+}
+input{
+    display: inline-block;
+    float: left;
 }
 input:hover{
     background-color: antiquewhite;
 }
 textarea:hover{
     background-color: antiquewhite;
-}
-fieldset{
-    
 }
