@@ -11,91 +11,98 @@
     </head>
     <body>
         <h1 style="text-align: center;">Formulaire de creation de votre CV</h1>
+
+
         <form action="action-page.php" method="get">
 
-            <fieldset style="text-align: center;width: 700px" class="form">
-            <legend class="legend">Informations personnelles:</legend>
-               <label for="image">Inserer votre photo:</label>
-               <input type="file" name="image" id="image" accept="image/*">
-           
+            <fieldset style="text-align: center; width: 700px" class="form">
+                <legend class="legend">Informations personnelles:</legend>
+                <label for="image">Inserer votre photo:</label>
+                <input type="file" name="image" id="image" accept="image/*">
+
                 <label for="fname">Prenom: </label>
-                <input type="text" id="fname" name="fname" placeholder="Steve" maxlength="25" required>
-            
-            
+                <input type="text" class="input-field" id="fname" name="fname" placeholder="Steve" maxlength="25" required>
+
                 <label for="lname">Nom: </label>
-                <input type="text" id="lname" name="lname" placeholder="Jobs" maxlength="25" required>
-            
-           
-            
-            <label for="birthday">Date de naissance:</label>
-                <input type="date" id="birthday" name="birthday">
-            
-            
+                <input type="text" class="input-field" id="lname" name="lname" placeholder="Jobs" maxlength="25" required>
+
+                <label for="birthday">Date de naissance:</label>
+                <input type="date" class="input-field" id="birthday" name="birthday">
+
                 <label for="adresse">Adresse: </label>
-                <input type="adresse" id="adresse" name="adresse" placeholder="Hay riad 2,Rabat">
-           
+                <input type="adresse" class="input-field" id="adresse" name="adresse" placeholder="Hay riad 2,Rabat">
+
                 <label for="email">Enter your email:</label>
-                <input type="email" id="email" name="email" placeholder="example@domain" >
-            
+                <input type="email" class="input-field" id="email" name="email" placeholder="example@domain">
+
                 <label for="SF"> Situation familiale : </label>
-                    <input type="radio" name="SF" value="Célibataire"> Célibataire 
-                    <input type="radio" name="SF" value="Marrié"> Marrié 
-                    <input type="radio" name="SF" value="Divorcé"> Divorcé <br>
-                
+                <input type="radio" name="SF" value="Célibataire"> Célibataire 
+                <input type="radio" name="SF" value="Marrié"> Marrié 
+                <input type="radio" name="SF" value="Divorcé"> Divorcé <br>
+
                 <label for="tcv">Titre du CV: </label>
-                <input type="text" id="tcv" name="tcv" placeholder="CV professionnel de Steve Jobs" required>
-            
+                <input type="text" class="input-field" id="tcv" name="tcv" placeholder="CV professionnel de Steve Jobs" required>
+
                 <label for="des">Description: </label><br>
                 <textarea id="des" name="des" rows="1" cols="80" placeholder="Decrire votre profil" style="overflow: scroll;"></textarea>
-            </fieldset >
+            </fieldset>
+
             <br>
 
-            <fieldset style="text-align: center;width: auto;width: 700px" class="form">
-            <legend class="legend">Informations professionnelles</legend>
-            <label for="fname">Type de baccalaureat:</label>
-            <input type="text" id="fname" name="fname" placeholder="Sciences mathématiques A" required>
-            <label for="diplomat">Donner votre diplome</label>
-            <select id="Diplomes" name="diplomat">
-                <option value="DEUG">DEUG</option>
-                <option value="DEUST">DEUST</option>
-                <option value="LICENCE">LICENCE</option>
-                <option value="MASTER">MASTER</option>
-                <option value="IE">INGENIEUR D'ETAT</option>
-                <option value="MS">MASTER SPECIALISE</option>
-                <option value="PhD">DOCTORAT</option>
-            </select>
-            <label for="goal">Competences techniques:</label>
-            <textarea id="goal" name="goal" rows="1" cols="80" placeholder="Competent en languages de developpemnt full-stack..." style="overflow: scroll;"></textarea><br>
-            <label for="compli">Competences linguistiques:</label>
+            <fieldset style="text-align: center; width: 700px" class="form">
+                <legend class="legend">Informations professionnelles</legend>
+                <div class="groupeD">
+                    <label for="baccalaureat">Type de baccalaureat:</label>
+                    <input type="text" class="input-field" id="baccalaureat" name="baccalaureat" placeholder="Sciences mathématiques A" required>
+                </div>
+                <div class="groupeD">
+                    <label for="diplomat">Donner votre diplome</label>
+                    <select id="Diplomes" class="input-field" name="diplomat">
+                        <option value="DEUG">DEUG</option>
+                        <option value="DEUST">DEUST</option>
+                        <option value="LICENCE">LICENCE</option>
+                        <option value="MASTER">MASTER</option>
+                        <option value="IE">INGENIEUR D'ETAT</option>
+                        <option value="MS">MASTER SPECIALISE</option>
+                        <option value="PhD">DOCTORAT</option>
+                    </select>
+                </div>
+
+                <label for="goal">Competences techniques:</label>
+                <textarea id="goal" name="goal" rows="1" cols="80" placeholder="Competent en languages de developpemnt full-stack..." style="overflow: scroll;"></textarea><br>
+
+                <label for="compli">Competences linguistiques:</label>
+                <div>
+                    <label for="ENG">
+                        <input type="checkbox" id="ENG" name="option1" value="Option 1"> Anglais
+                    </label>
+                    <label for="FR">
+                        <input type="checkbox" id="FR" name="option2" value="Option 2"> Francais
+                    </label>
+                    <label for="AR">
+                        <input type="checkbox" id="AR" name="option3" value="Option 3"> Arabe
+                    </label>
+                </div>
+
+                <label for="other">
+                    <input type="checkbox" id="other" name="option4" value="Option 4"> Autres:
+                </label>
+                <textarea id="lang" name="lang" rows="1" cols="80" style="overflow: scroll;"></textarea><br>
+            </fieldset>
+
+            <br>
+
+            <input type="submit" class="submit">
+            <br><br>
             <div>
-            <label for="ENG">
-             <input type="checkbox" id="ENG" name="option1" value="Option 1"> Anglais
-            </label>
-            <label for="FR">
-            <input type="checkbox" id="FR" name="option2" value="Option 2"> Francais
-            </label>
-            <label for="AR">
-            <input type="checkbox" id="AR" name="option3" value="Option 3"> Arabe
-                
-            </label></div>
-            <label for="other">
-            <input type="checkbox" id="other" name="option4" value="Option 4"> Autres:
-             <br>
-            </label>
-            <textarea id="lang" name="lang" rows="1" cols="80" style="overflow: scroll;"></textarea><br>
-            <br>
-            <br>
-        </fieldset>
-        <br>
-        
-        <input type="submit"  class="submit">
-        <br><br>
-        <div>
-            <label style="text-align: center;">Vous voulez recommencer ?</label>
-            <input type="reset" class="submit">
+                <label style="text-align: center;" id="VC">Voulez-vous recommencer ?</label>
+                <a href="#top"><input type="reset" class="submit"></a>
             </div>
-            <br>
-            </div>
+
+        </form>
+
+<div id="top"></div>
+
        
     </body>
 </html>
