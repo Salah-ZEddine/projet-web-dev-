@@ -1,7 +1,17 @@
 body{
     text-align: center;
     background-image: url("images/background\ landscape\ .jpeg");
+    
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+input:hover{
+    background-color: antiquewhite;
+}
+textarea:hover{
+    background-color: antiquewhite;
+}
+fieldset{
+    
 }
