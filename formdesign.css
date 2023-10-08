@@ -1,23 +1,62 @@
-body{
-    text-align: center;    
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
 }
-label{
-    display: inline-block;
-    float: left;
-    clear: left;
-    width: 250px;
-    text-align: right;
+
+form {
+    max-width: 730px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
 }
-input{
-    display: inline-block;
-    float: left;
+
+h1 {
+    text-align: center;
+    color: #333;
 }
-input:hover{
-    background-color: antiquewhite;
+
+fieldset {
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 5px;
 }
-textarea:hover{
-    background-color: antiquewhite;
+
+legend {
+    font-weight: bold;
+    color: #333;
 }
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #555;
+}
+
+input[type="text"], input[type="email"], input[type="date"], textarea, select {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+input[type="submit"], input[type="reset"] {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+input[type="submit"]:hover, input[type="reset"]:hover {
+    background-color: #45a049;
+}
+
+/* Add more styles as needed */

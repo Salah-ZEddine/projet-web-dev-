@@ -11,117 +11,115 @@
     <body>
         <h1 style="text-align: center;">Formulaire de creation de votre CV</h1>
         <form action="action-page.php" method="get">
-
-            <fieldset style="text-align: center;width: auto;">
-            <legend>Informations personnels:</legend>
-            <div>
-                <label for="fname">Prenom: </label>
-                <input type="text" id="fname" name="fname" placeholder="Steve" maxlength="25" required>
-            </div>
-            <br>
-            <div>
-                <label for="lname">Nom: </label>
-                <input type="text" id="lname" name="lname" placeholder="Jobs" maxlength="25" required>
-            </div>
-            <br>
-            <div>
-                <label for="birthday">Date de naissance:</label>
-                <input type="date" id="birthday" name="birthday">
-            </div>
-            <br>
-            <div>
-                <label for="adresse">Adresse: </label>
-                <input type="adresse" id="adresse" name="adresse" placeholder="Hay riad 2,Rabat">
-            </div>
-            <br>
-            <div>
-                <label for="email">Enter your email:</label>
-                <input type="email" id="email" name="email" placeholder="example@domain" >
-            </div>
-            <br>
-            <div>
-                <label for="SF"> Situation familiale : </label><br><br>
-                    <input type="radio" name="SF" value="Célibataire"> Célibataire 
-                    <input type="radio" name="SF" value="Marrié"> Marrié 
-                    <input type="radio" name="SF" value="Divorcé"> Divorcé <br>
-            </div>
-            <br>
-            <div>
-                <label for="tcv">Titre du CV: </label>
-                <input type="text" id="tcv" name="tcv" placeholder="CV professionnel de Steve Jobs" required>
-            </div>
-            <br>
-            <div>
-                <label for="des">Description: </label><br>
-                <textarea id="des" name="des" rows="4" cols="80" placeholder="something you want to add"></textarea>
-            </div>
-            <br>
-            <div>
-                <label for="image">Inserer votre photo</label>
-                <input type="file" name="image" id="image" accept="image/*">
-            </div>
-            <br>
-            <div>
-            </fieldset>
             <fieldset>
-            <legend>Informations professionnels</legend>
-            <fieldset style="width: 630px;">
-            <legend>Formation:</legend>
-            <label for="fname">Type de baccalaureat:</label>
-            <input type="text" id="fname" name="fname" placeholder="sciences mathématiques A" required><br><br>
-            <label for="diplomat">Donner votre diplome</label>
-            <select id="Diplomes" name="diplomat">
-                <option value="DEUG">DEUG</option>
-                <option value="DEUST">DEUST</option>
-                <option value="LICENCE">LICENCE</option>
-                <option value="MASTER">MASTER</option>
-                <option value="IE">INGENIEUR D'ETAT</option>
-                <option value="MS">MASTER SPECIALISE</option>
-                <option value="PhD">DOCTORAT</option>
+                <legend>Information personelle</legend>
+                <div>
+                    <label for="fname">Prenom: </label>
+                    <input type="text" id="fname" name="fname" placeholder="Steve" maxlength="25" required>
+                </div>
+                <br>
+                <div>
+                    <label for="lname">Nom: </label>
+                    <input type="text" id="lname" name="lname" placeholder="Jobs" maxlength="25" required>
+                </div>
+                <br>
+                <div>
+                    <label for="birthday">Date de naissance:</label>
+                    <input type="date" id="birthday" name="birthday">
+                </div>
+                <br>
+                <div>
+                    <label for="adresse">Adresse: </label>
+                    <input type="adresse" id="adresse" name="adresse" placeholder="Hay riad 2,Rabat">
+                </div>
+                <br>
+                <div>
+                    <label for="email">Enter your email:</label>
+                    <input type="email" id="email" name="email" placeholder="example@domain" >
+                </div>
+                <br>
+                <div>
+                    <label for="SF"> Situation familiale : </label><br><br>
+                        <input type="radio" name="SF" value="Célibataire"> Célibataire 
+                        <input type="radio" name="SF" value="Marrié"> Marrié 
+                        <input type="radio" name="SF" value="Divorcé"> Divorcé <br>
+                </div>
+                <br>
+                <div>
+                    <label for="tcv">Titre du cv: </label>
+                    <input type="text" id="tcv" name="tcv" placeholder="CV professionnel de Steve Jobs" required>
+                </div>
+                <br>
+                <div>
+                    <label for="des">Description: </label><br>
+                    <textarea id="des" name="des" rows="4" cols="80" placeholder="something you want to add"></textarea>
+                </div>
+                <br>
+                <div>
+                    <label for="image">Inserer votre photo</label>
+                    <input type="file" name="image" id="image" accept="image/*">
+                </div>
+                <br>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Informations professionnels</legend>
+                <div>
+                <div>
+                <legend>Formation:</legend>
+                <br>
+                <label for="fname">Type de baccalaureat:</label>
+                <input type="text" id="fname" name="fname" placeholder="sciences mathématiques A" required><br><br>
+                <label for="diplomat">Donner votre diplome</label>
+                <select id="Diplomes" name="diplomat">
+                    <option value="DEUG">DEUG</option>
+                    <option value="DEUST">DEUST</option>
+                    <option value="LICENCE">LICENCE</option>
+                    <option value="MASTER">MASTER</option>
+                    <option value="IE">INGENIEUR D'ETAT</option>
+                    <option value="MS">MASTER SPECIALISE</option>
+                    <option value="PhD">DOCTORAT</option>
+                
+                </select>
+                </div>
+                <br><br>
+
+                </div>
+                <div>
+                <label for="goal">Competences techniques:</label><br><br>
+                <textarea id="goal" name="goal" rows="5" cols="80" placeholder="(facultatif)"></textarea><br>
+                </div>
+                <div>
+                <p> Competences linguistiques:</p>
             
-            </select>
-
-        </fieldset>
-            <br>
-           
-               
-            <br><br>
-
+                    <label for="ENG">
+                        <input type="checkbox" id="ENG" name="option1" value="Option 1"> Anglais
+                    </label>
+                    
+                    <label for="FR">
+                        <input type="checkbox" id="FR" name="option2" value="Option 2"> Francais
+                    </label>
+                    
+                    <label for="AR">
+                        <input type="checkbox" id="AR" name="option3" value="Option 3"> Arabe
                 
-            <div>
-            <label for="goal">Competences techniques:</label><br><br>
-            <textarea id="goal" name="goal" rows="5" cols="80" placeholder="(facultatif)"></textarea><br>
-            </div>
-            <div>
-            <p> Competences linguistiques:</p>
-            <label for="ENG">
-             <input type="checkbox" id="ENG" name="option1" value="Option 1"> Anglais
-            </label>
-             <br>
-            <label for="FR">
-            <input type="checkbox" id="FR" name="option2" value="Option 2"> Francais
-            </label>
-            <br>
-            <label for="AR">
-            <input type="checkbox" id="AR" name="option3" value="Option 3"> Arabe
-                
-            </label><br>
-            <label for="other">
-            <input type="checkbox" id="other" name="option4" value="Option 4"> Autres:
-             <br>
-            </label>
-            <br>
-            <textarea id="lang" name="lang" rows="5" cols="80"></textarea><br>
-            <br>
-            <br>
+                    </label>
+                    <label for="other">
+                        <input type="checkbox" id="other" name="option4" value="Option 4"> Autres:
+                        <br>
+                    </label>
+                    <br>
+                    <textarea id="lang" name="lang" rows="5" cols="80"></textarea><br>
+                    <br>
+                <br>
             </fieldset>
             <div>
-            <input type="reset" style="border-radius: 5px;">
+                <input type="reset" style="border-radius: 5px;">
             </div>
             <br>
             </div>
-            <a href="index.html" >
-                <input type="submit" style="background-color: green;color: white; border-radius: 5px;text-align: center;">
+            <a href="index.html">
+                <input type="submit" style="background-color: green;color: white; border-radius: 5px;">
             </a>
         </form>
     </body>
