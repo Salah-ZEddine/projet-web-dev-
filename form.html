@@ -10,6 +10,8 @@
     <body>
         <h1 style="text-align: center;">Formulaire de creation de votre CV</h1>
         <form action="action-page.php" method="get">
+            <fieldset style="text-align: center;width: auto;">
+            <legend>Informations personnels:</legend>
             <div>
                 <label for="fname">Prenom: </label>
                 <input type="text" id="fname" name="fname" placeholder="Steve" maxlength="25" required>
@@ -43,7 +45,7 @@
             </div>
             <br>
             <div>
-                <label for="tcv">Titre du cv: </label>
+                <label for="tcv">Titre du CV: </label>
                 <input type="text" id="tcv" name="tcv" placeholder="CV professionnel de Steve Jobs" required>
             </div>
             <br>
@@ -58,6 +60,7 @@
             </div>
             <br>
             <div>
+            </fieldset>
             <fieldset style="width: 630px;">
             <legend>Formation:</legend>
             <label for="fname">Type de baccalaureat:</label>
@@ -109,8 +112,8 @@
             </div>
             <br>
             </div>
-            <a href="index.html">
-                <input type="submit" style="background-color: green;color: white; border-radius: 5px;">
+            <a href="index.html" >
+                <input type="submit" style="background-color: green;color: white; border-radius: 5px;text-align: center;">
             </a>
         </form>
     </body>
