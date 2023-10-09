@@ -83,7 +83,10 @@ input[type="reset"]:hover {
 /* Add more specific styles for other elements as needed */
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> parent of 00096e9 (some css adjust)
 /* Add media queries for responsive design */
 
 >>>>>>> parent of 00096e9 (some css adjust)
@@ -94,7 +97,11 @@ input[type="reset"]:hover {
 .input-container {
     display: inline-block;
 <<<<<<< HEAD
+<<<<<<< HEAD
     margin-right: 20px;
+=======
+    margin-right: 20px; /* Adjust margin as needed to separate containers */
+>>>>>>> parent of 00096e9 (some css adjust)
 =======
     margin-right: 20px; /* Adjust margin as needed to separate containers */
 >>>>>>> parent of 00096e9 (some css adjust)
@@ -126,10 +133,13 @@ input[type="reset"]:hover {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 .form{
     border-style:ridge;
 }
 
 
+=======
+>>>>>>> parent of 00096e9 (some css adjust)
 =======
 >>>>>>> parent of 00096e9 (some css adjust)
