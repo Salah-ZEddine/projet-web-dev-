@@ -85,29 +85,20 @@ input[type="reset"]:hover {
 
 /* Add more specific styles for other elements as needed */
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> parent of 00096e9 (some css adjust)
+
 /* Add media queries for responsive design */
 
->>>>>>> parent of 00096e9 (some css adjust)
 @media (max-width: 768px) {
     /* Add styles for smaller screens if needed */
 }
 
 .input-container {
     display: inline-block;
-<<<<<<< HEAD
-<<<<<<< HEAD
+
     margin-right: 20px;
-=======
     margin-right: 20px; /* Adjust margin as needed to separate containers */
->>>>>>> parent of 00096e9 (some css adjust)
-=======
+
     margin-right: 20px; /* Adjust margin as needed to separate containers */
->>>>>>> parent of 00096e9 (some css adjust)
 }
 
 .input-container label {
@@ -135,8 +126,7 @@ input[type="reset"]:hover {
     background-color: rgb(3, 26, 3)
 }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
+
 .form{
     border-style:ridge;
 }
@@ -174,8 +164,3 @@ input:hover::placeholder{
     opacity: 0.9;
 }
 
-
-=======
->>>>>>> parent of 00096e9 (some css adjust)
-=======
->>>>>>> parent of 00096e9 (some css adjust)
