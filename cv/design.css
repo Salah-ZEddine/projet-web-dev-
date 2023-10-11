@@ -1,11 +1,29 @@
-header h1{
-    text-align: center;
-}
-section h2{
+h1,h2{
     text-align: center;
 }
 
 body{
     background-color: lightgrey;
-
+    background-image: url('/images/cv\ background2.jpg');
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
+}
+section{
+    background-color: white;
+    opacity: 0.85;
+    padding: 40px;
+    width: 900px;
+    margin: auto;
+    text-align: justify;
+    border: hidden;
+    border-radius: 5px;
+}
+footer{
+    
+    
+    color: white;
+    text-align: center;
+    
+    
 }
