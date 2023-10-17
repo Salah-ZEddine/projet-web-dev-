@@ -7,11 +7,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="formdesign.css">
       
-
     </head>
     <body>
+        <script src="interract.js"></script>
         <h1 style="text-align: center;">Formulaire de creation de votre CV</h1>
-        <form action="action-page.php" method="get">
+        <form id="cvForm">
 
             <fieldset style="text-align: center;width: 700px" class="form">
             <legend class="legend">Informations personnelles:</legend>
@@ -55,7 +55,7 @@
             <legend class="legend">Informations professionnelles</legend>
             <label for="fname">Type de baccalaureat:</label>
 
-            <input type="text" id="fname" name="fname" placeholder="Sciences mathématiques A" required>
+            <input type="text" id="bac" name="fname" placeholder="Sciences mathématiques A" required>
             <label for="diplomat">Donner votre diplome</label>
             <select id="Diplomes" name="diplomat">
                 <option value="DEUG">DEUG</option>
@@ -108,6 +108,7 @@
         <br>
         </div>
         </form>
+        <div id="result"></div>
 
     </body>
 </html>
