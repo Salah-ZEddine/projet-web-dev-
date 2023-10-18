@@ -1,31 +1,21 @@
+
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Display Form Data</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 </head>
-<body>
-    <h1>Form Data</h1>
-    <div id="formData"></div>
+<body style="background-color: whitesmoke;" >
+    <center>
+        <h1>Resultat formulaire cv</h1>
+    </center>
+    <p id="res"></p>
 
-    <script>
-        // Retrieve form data from localStorage
-        var formData = JSON.parse(localStorage.getItem('formData'));
-
-        // Display form data
-        var formDataDiv = document.getElementById('formData');
-        formDataDiv.innerHTML = "Prénom: " + formData.prenom + "<br>" +
-                                "Nom: " + formData.nom + "<br>" +
-                                "Date de naissance: " + formData.dateNaissance + "<br>" +
-                                "Adresse: " + formData.adresse + "<br>" +
-                                "Email: " + formData.email + "<br>" +
-                                "Situation familiale: " + formData.situationFamiliale + "<br>" +
-                                "Titre du CV: " + formData.titreCV + "<br>" +
-                                "Description: " + formData.description + "<br>" +
-                                "Type de baccalauréat: " + formData.typeBac + "<br>" +
-                                "Diplôme: " + formData.diplome + "<br>" +
-                                "Compétences techniques: " + formData.competencesTechniques + "<br>" +
-                                "Langues: " + formData.langues.join(", ");
+    <script src="interract.js">
+        
     </script>
+
+
 </body>
 </html>
