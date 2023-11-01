@@ -4,10 +4,7 @@ h1,h2{
 
 body{
     background-color: lightgrey;
-    background-image: url('/images/cv\ background2.jpg');
-    background-repeat: no-repeat;
-    background-size:cover;
-    background-attachment: fixed;
+
 }
 section{
     background-color: white;
